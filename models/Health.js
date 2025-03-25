@@ -9,16 +9,16 @@ const healthSchema = new mongoose.Schema(
         },
         heartHealth: {
             type: String, 
-            enum: ["Good", "Bad"],  // Correct usage of enum with an array
+            enum: ["Great", "Unhealthy"],  // Correct usage of enum with an array
             required: true,
         },
-        cholesterol: {
+        weight: {
             type: Number,
             required: true, 
         },
-        inspectionRating: {
-            type: String,  // Specify that bloodPressure is a String type
-            enum: ["A", "B", "C"],  // Use enum with an array
+        BMI: {
+            type: String,  // Specify that BMI is a String type
+            enum: ["High", "Average", "Low"],  // Use enum with an array
             required: true,
         },
         obesity: {
